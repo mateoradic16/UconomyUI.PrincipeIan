@@ -6,12 +6,12 @@ namespace UconomyUI.By.PrincipeIan
     {
         public string colorBalance;
         public string serverName;
-        public string colorName;
+        public string currency;
         public void LoadDefaults()
         {
             colorBalance = "#06B409";
             serverName = "ServerName";
-            colorName = "#B43E06";
+            currency = "#B43E06";
         }
     }
 }

@@ -20,3 +20,7 @@ C:\Users\educatalan02\Desktop\UconomyUI.PrincipeIan-master\obj\Debug\UconomyUI.B
 C:\Users\educatalan02\Desktop\UconomyUI.PrincipeIan-master\obj\Debug\UconomyUI.By.PrincipeIan.csproj.CopyComplete
 C:\Users\educatalan02\Desktop\UconomyUI.PrincipeIan-master\obj\Debug\UconomyUI.By.PrincipeIan.dll
 C:\Users\educatalan02\Desktop\UconomyUI.PrincipeIan-master\obj\Debug\UconomyUI.By.PrincipeIan.pdb
+C:\Users\Mateo\Source\Repos\UconomyUI.PrincipeIan\obj\Debug\UconomyUI.By.PrincipeIan.csprojAssemblyReference.cache
+C:\Users\Mateo\Source\Repos\UconomyUI.PrincipeIan\obj\Debug\UconomyUI.By.PrincipeIan.csproj.CoreCompileInputs.cache
+C:\Users\Mateo\Source\Repos\UconomyUI.PrincipeIan\obj\Debug\UconomyUI.By.PrincipeIan.dll
+C:\Users\Mateo\Source\Repos\UconomyUI.PrincipeIan\obj\Debug\UconomyUI.By.PrincipeIan.pdb

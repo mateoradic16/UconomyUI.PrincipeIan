@@ -17,7 +17,7 @@ namespace UconomyUI.By.PrincipeIan
         {
         Instance = this;
         Rocket.Core.Logging.Logger.Log("Plugin loaded correctly");
-        Rocket.Core.Logging.Logger.Log("UconomyUI free By PrincipeIan");
+        Rocket.Core.Logging.Logger.Log("UconomyUI free By PrincipeIan(Edited By Teo)");
             U.Events.OnPlayerConnected += Events_OnPlayerConnected;
             Uconomy.Instance.OnBalanceUpdate += Instance_OnBalanceUpdate;
             U.Events.OnPlayerDisconnected += Events_OnPlayerDisconnected;
@@ -25,22 +25,19 @@ namespace UconomyUI.By.PrincipeIan
         private void Events_OnPlayerDisconnected(UnturnedPlayer player) {
 
             dicionaa.Remove(player.CSteamID);
-            EffectManager.askEffectClearByID(27411, player.CSteamID);
-            EffectManager.askEffectClearByID(27421, player.CSteamID);
+            EffectManager.askEffectClearByID(45321, player.CSteamID);
         }
         private void Instance_OnBalanceUpdate(UnturnedPlayer player, decimal amt)
         {
             dicionaa[player.CSteamID] = Uconomy.Instance.Database.GetBalance(player.CSteamID.ToString());
-            EffectManager.askEffectClearByID(27411, player.CSteamID);
-            EffectManager.askEffectClearByID(27421, player.CSteamID);
-            EffectManager.sendUIEffect(27411, 27412, player.CSteamID, true, Configuration.Instance.colorBalance, "$" + dicionaa[player.CSteamID].ToString());
-            EffectManager.sendUIEffect(27421, 27422, player.CSteamID, true, Configuration.Instance.colorName, Configuration.Instance.serverName);
+            EffectManager.askEffectClearByID(45321, player.CSteamID);
+            EffectManager.sendUIEffect(45321, 3221, player.CSteamID, true, Configuration.Instance.colorBalance, "$" + dicionaa[player.CSteamID].ToString());
         }
         private void Events_OnPlayerConnected(UnturnedPlayer player)
         {         
+            
             dicionaa.Add(player.CSteamID, Uconomy.Instance.Database.GetBalance(player.CSteamID.ToString()));
-            EffectManager.sendUIEffect(27411, 27412, player.CSteamID, true, Configuration.Instance.colorBalance ,"$"+dicionaa[player.CSteamID].ToString());
-            EffectManager.sendUIEffect(27421, 27422, player.CSteamID, true, Configuration.Instance.colorName, Configuration.Instance.serverName);
+            EffectManager.sendUIEffect(45321, 3221, player.CSteamID, true ,Uconomy.Instance.Configuration.Instance.MoneyName+dicionaa[player.CSteamID].ToString());
         }
         protected override void Unload()
         {
